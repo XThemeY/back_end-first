@@ -1,10 +1,4 @@
-// import {VideoDBType} from './video-db-type'
-
-export type DBType = {
-	// типизация базы данных (что мы будем в ней хранить)
-	videos: any[]; // VideoDBType[]
-	// some: any[]
-};
+import { DBType } from '@types';
 
 export const db: DBType = {
 	// создаём базу данных (пока это просто переменная)

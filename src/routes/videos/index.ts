@@ -4,11 +4,15 @@ import {
 	createVideoController,
 	findVideoController,
 	deleteVideoController,
+	updateVideoController,
 } from '../../controllers';
 
-export const videosRouter = Router();
+const router = Router();
 
-videosRouter.get('/', getVideosController);
-videosRouter.post('/', createVideoController);
-videosRouter.get('/:id', findVideoController);
-videosRouter.delete('/:id', deleteVideoController);
+router.get('/', getVideosController);
+router.post('/', createVideoController);
+router.put('/:id', updateVideoController);
+router.get('/:id', findVideoController);
+router.delete('/:id', deleteVideoController);
+
+export default router;
